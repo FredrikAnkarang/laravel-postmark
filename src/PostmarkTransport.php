@@ -144,7 +144,7 @@ class PostmarkTransport implements TransportInterface
             }
 
             $payload['Headers'][] = [
-                'Name' => $name,
+                'Name' => $header->getName(),
                 'Value' => $header->getBodyAsString(),
             ];
         }
